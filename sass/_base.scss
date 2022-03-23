@@ -1,0 +1,36 @@
+$mobile:480px;
+$tablet:768px;
+$desktop:1200px;
+body{
+background-color: #fff;
+font-family: Roboto, suns-serif;
+letter-spacing: 0.03em;
+}
+ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+section{
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: auto;
+    display: block;
+    
+
+    @media(min-width:480px){
+        width: 480px;
+        }
+    // @media(min-width:768px){
+    //     width: 768px;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     }
+    // @media   (min-width:1200px){
+    //     width: 1200px;
+    //     }
+}
+
+
