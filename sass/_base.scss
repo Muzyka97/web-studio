@@ -1,36 +1,53 @@
 $mobile:480px;
 $tablet:768px;
 $desktop:1200px;
+
 body{
 background-color: #fff;
 font-family: Roboto, suns-serif;
 letter-spacing: 0.03em;
+}
+p, li{
+margin: 0;
 }
 ul{
 list-style: none;
 margin: 0;
 padding: 0;
 }
-section{
+
+.container{
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 40px;
     padding-bottom: 60px;
     margin: auto;
     display: block;
+    width: 100%;
     
-
     @media(min-width:480px){
-        width: 480px;
+        max-width: 480px;
+        
         }
-    // @media(min-width:768px){
-    //     width: 768px;
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     }
-    // @media   (min-width:1200px){
-    //     width: 1200px;
-    //     }
+    @media(min-width:768px){
+        max-width: 768px;
+        }
+    @media   (min-width:1200px){
+        max-width: 1200px;
+        }
 }
-
-
+img{
+max-width: 100%;
+display: block;
+height: auto;
+    @media(min-width:480px){
+        max-width: 450px;
+        
+        }
+    @media(min-width:768px){
+        max-width: 768px;
+        }
+    @media   (min-width:1200px){
+        max-width: 1200px;
+        }
+}
