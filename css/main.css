@@ -111,7 +111,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-p, li {
+p, h3, li {
   margin: 0;
 }
 
@@ -155,24 +155,6 @@ img {
   height: auto;
 }
 
-@media (min-width: 480px) {
-  img {
-    max-width: 450px;
-  }
-}
-
-@media (min-width: 768px) {
-  img {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  img {
-    max-width: 1200px;
-  }
-}
-
 @media (min-width: 768px) {
   .team {
     display: flex;
@@ -191,8 +173,8 @@ img {
 
 @media (min-width: 480px) {
   .team-element {
-    height: 230px;
-    width: 450px;
+    max-height: 622px;
+    max-width: 450px;
   }
 }
 
@@ -219,32 +201,35 @@ img {
 }
 
 .team-box {
-  background: #F5F4FA;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #fff;
   border-radius: 4px;
+  padding-top: 30px;
+  margin-bottom: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 480px) {
   .team-box {
-    height: 123px;
     width: 450px;
   }
 }
 
 @media (min-width: 768px) {
   .team-box {
-    height: 120px;
     width: 354px;
   }
 }
 
 @media (min-width: 1200px) {
   .team-box {
-    height: 120px;
     width: 270px;
   }
 }
 
 .team-title {
+  text-align: center;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -254,26 +239,58 @@ img {
 }
 
 .team-text {
+  text-align: center;
+  color: #757575;
   font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 16px;
 }
 
-@media (min-width: 480px) {
-  .team-text {
-    width: 450px;
-  }
+.social-grid {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .team-text {
-    width: 354px;
-    height: 75px;
-  }
+.social-container__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 1200px) {
-  .team-text {
-    width: 270px;
+  .social-container__link {
+    max-width: 1200px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-container__link:hover, .social-container__link:focus {
+    background-color: #2196F3;
+  }
+}
+
+.social-container__icon {
+  fill: #AFB1B8;
+  height: 20px;
+  width: 20px;
+}
+
+@media (min-width: 1200px) {
+  .social-container__icon {
+    max-width: 1200px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-container__link:hover .social-container__icon {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+  }
+  .social-container__link:focus .social-container__icon {
+    background-color: #2196F3;
+    fill: #FFFFFF;
   }
 }
 /*# sourceMappingURL=main.css.map */
