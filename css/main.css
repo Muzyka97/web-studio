@@ -79,6 +79,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .advanteges-text {
@@ -124,8 +125,6 @@ ul {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-  padding-top: 40px;
-  padding-bottom: 60px;
   margin: auto;
   display: block;
   width: 100%;
@@ -147,6 +146,11 @@ ul {
   .container {
     max-width: 1200px;
   }
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 img {
@@ -174,13 +178,12 @@ img {
 @media (min-width: 480px) {
   .team-element {
     max-height: 622px;
-    max-width: 450px;
   }
 }
 
 @media (min-width: 768px) {
   .team-element {
-    height: 226px;
+    max-height: 536px;
     width: calc((100% - 2 * 30px )/2);
     margin: 15px;
   }
@@ -188,7 +191,7 @@ img {
 
 @media (min-width: 1200px) {
   .team-element {
-    height: 251px;
+    max-height: 428px;
     width: calc((100% - 4 * 30px )/4);
     margin: 15px;
   }
@@ -205,7 +208,7 @@ img {
   background: #fff;
   border-radius: 4px;
   padding-top: 30px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
   align-items: center;
   justify-content: center;
 }
@@ -267,7 +270,10 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .social-container__link:hover, .social-container__link:focus {
+  .social-container__link:hover {
+    background-color: #2196F3;
+  }
+  .social-container__link:focus {
     background-color: #2196F3;
   }
 }
@@ -292,5 +298,31 @@ img {
     background-color: #2196F3;
     fill: #FFFFFF;
   }
+}
+
+.page-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  color: #000000;
+  text-decoration: none;
+  font-family: Raleway, suns-serif;
+  font-size: 26px;
+  line-height: 1.14;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: inline-block;
+  margin-right: 93px;
 }
 /*# sourceMappingURL=main.css.map */

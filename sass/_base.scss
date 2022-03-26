@@ -19,8 +19,6 @@ padding: 0;
 .container{
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 40px;
-    padding-bottom: 60px;
     margin: auto;
     display: block;
     width: 100%;
@@ -35,6 +33,10 @@ padding: 0;
     @media   (min-width:1200px){
         max-width: 1200px;
         }
+}
+.section{
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 img{
 max-width: 100%;

@@ -15,15 +15,15 @@
     .team-element{
         @media   (min-width:480px){
         max-height:622px ;
-        max-width: 450px;
+        
             }
         @media  (min-width:768px){
-            height: 226px;
+            max-height:536px ;
             width: calc((100% - 2 * 30px )/2);
             margin: 15px;
             }
         @media  (min-width:1200px){
-            height: 251px; 
+            max-height:428px ; 
             width: calc((100% - 4 * 30px )/4);
             margin: 15px;
             }
@@ -40,7 +40,7 @@
         background: #fff;
         border-radius: 4px;
         padding-top:  30px;
-        margin-bottom: 24px;
+        padding-bottom: 24px;
     align-items: center;
     justify-content: center;
         @media   (min-width:480px){
@@ -89,9 +89,11 @@
         max-width: 1200px;
         transition-duration: 250ms;
         transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover ,
-            &:focus {  
+            &:hover {  
             background-color:#2196F3;
+            }
+            &:focus{
+                background-color:#2196F3;
             }
         }
         }
