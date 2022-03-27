@@ -42,14 +42,25 @@ img{
 max-width: 100%;
 display: block;
 height: auto;
-    // @media(min-width:480px){
-    //     max-width: 450px;
-        
-    //     }
-    // @media(min-width:768px){
-    //     max-width: 768px;
-    //     }
-    // @media   (min-width:1200px){
-    //     max-width: 1200px;
-    //     }
 }
+.link {   
+    color:#212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    
+  
+    display:inline-block ; 
+    position: relative;
+    
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    
+    .current{
+    color: #2196F3;
+    text-decoration: none;
+    display:inline-block ;
+    }

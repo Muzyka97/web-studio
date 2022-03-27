@@ -13,22 +13,22 @@
 <body>
     <header class="page-header">
         <div class="header container">
-          <!--nav-->
+          <!-- nav -->
         <nav class="nav">      
           <a href="/index.html"class="logo"> <span class="logo__web">Web</span>Studio </a>
-          <button  type="button"> 
-            <svg width="40px" height="40px">
-              <use href="./images/symbol.svg#icon-menu"></use>
+          <button  type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
+            <svg width="40" height="40" aria-label="перемикач мобільного меню">
+              <use class="icon-close" href="./images/symbol.svg#icon-menu"></use>
+              <use class="icon-menu" href="./images/symbol.svg#icon-close"></use>
             </svg>
           </button>
-          <!-- <ul class="nav-grid">
+          <div class="menu-container" id="menu-container" data-menu>hdsljflksdg</div>
+          <ul class="nav-grid">
             <li class="nav-grid__container"><a href="index.html"class="link current ">Студия</a></li>
             <li class="nav-grid__container"><a href="portfolio.html" class="link ">Портфолио</a></li>
             <li class="nav-grid__container" ><a href=""class="link">Контакты</a></li>
           </ul> 
-        </nav > -->
-          <!--contact-->
-          <!-- <ul class="contact-grid" >
+          <ul class="contact-grid" >
             <li class="contact-grid__container">
               <a href="mailto:info@devstudio.com"class="link"> <svg class="contact-grid__icon" height="12" width="16" >
                 <use href="./images/symbol.svg#icon-envelope"></use>
@@ -40,7 +40,10 @@
               </svg>+38 096 111 11 11</a>
             </li>
           </ul>
-      </div> -->
+        </nav >
+          <!--contact-->
+         
+      </div>
     </header>
 <section class=" section container">
     <ul class="advanteges">
@@ -286,5 +289,6 @@
         </li>
     </ul>
 </section>
+<script src="./js/menu.js"></script>
 </body>
 </html>
