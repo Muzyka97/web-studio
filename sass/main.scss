@@ -1,4 +1,7 @@
-@import "./advanteges";
-@import "./base";
-@import "./team";
-@import "./header";
+@import "./layout/advanteges";
+@import "./layout/header";
+@import "./layout/team";
+@import "./components/section";
+@import "./components/container";
+
+@import "./utils/base";

@@ -1,0 +1,44 @@
+$mobile:480px;
+$tablet:768px;
+$desktop:1200px;
+
+body{
+    background-color: #fff ;
+    font-family: Roboto, suns-serif;
+    letter-spacing: 0.03em;
+}
+p, h3, li{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.link {   
+    color:#212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    
+  
+    display:inline-block ; 
+    position: relative;
+    
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    
+.current{
+    color: #2196F3;
+    text-decoration: none;
+    display:inline-block ;
+}

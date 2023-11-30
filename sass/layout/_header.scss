@@ -19,22 +19,21 @@
             }
     }
     
-    
-    .logo {
+.logo {
     color: #000000;
     text-decoration: none;
     font-family: Raleway, suns-serif;
     font-size: 26px;
     line-height: 1.14;
-    
+
     padding-top: 24px;
     padding-bottom: 25px;
     display: inline-block;
     margin-right: 88px;
-    }
-    .logo__web{
-        color: #2196F3;
-    }
+}
+.logo__web{
+    color: #2196F3;
+}
 .menu-button{
     @media(max-width:767px){
         z-index: 20;
@@ -70,34 +69,34 @@
         }
 }
 
-    .menu-container{
-        @media(max-width:767px){
-        max-width: 767px;
-        display: none;
-        position: absolute;
-        width: 100%;
-        z-index: 5;
-        height: 796px;
-        left: 0;
-        background-color: palegoldenrod;
-        padding: 20px;
-        text-align: center;
-        font-size: 20px;
-            &.is-open{
-                display: block;
-            }
+.menu-container{
+    @media(max-width:767px){
+    max-width: 767px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    height: 796px;
+    left: 0;
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+        &.is-open{
+            display: block;
         }
-        @media(min-width:768px){
-            &{
-                display: none;
-            }
-            }
-        @media   (min-width:1200px){
-            &{
-                display: none;
-            }
-            }
     }
+    @media(min-width:768px){
+        &{
+            display: none;
+        }
+        }
+    @media   (min-width:1200px){
+        &{
+            display: none;
+        }
+        }
+}
 .nav-grid{
     @media(max-width:767px){
         &{
@@ -122,11 +121,8 @@
         margin-right: 50px;
         }
         }
-}
-    
-
-    
-    .link.current::after{
+}  
+.link.current::after{
     content: "";
     position: absolute;
     width: 100%;
@@ -135,7 +131,7 @@
     border-radius: 2px;
     left: 0;
     bottom: -30px;
-    }
+}
     
 .contact-grid{
     @media(max-width:767px){

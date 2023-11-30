@@ -1,4 +1,4 @@
-.team{
+.team-list{
         @media  (min-width:768px){
             display: flex;
             flex-wrap: wrap;
@@ -15,7 +15,6 @@
     .team-element{
         @media   (min-width:480px){
         max-height:622px ;
-        
             }
         @media  (min-width:768px){
             max-height:536px ;
@@ -39,10 +38,9 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         background: #fff;
         border-radius: 4px;
-        padding-top:  30px;
         padding-bottom: 24px;
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
         @media   (min-width:480px){
             
             width: 450px;
@@ -63,6 +61,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 10px;
     
     }
