@@ -1,61 +1,54 @@
-
-.advanteges{
-    @media  (min-width:768px){
+.advanteges__list{
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
-        }
-    @media  (min-width:1200px){
-        
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-        }
+    }
+  
 }
-.advanteges-element{
-    @media   (min-width:480px){
+.advanteges__element{
+    @include mobile {
         height:230px ;
         max-width: 450px;
-        }
-    @media  (min-width:768px){
+    }
+    @include tablet{
         height: 226px;
         width: calc((100% - 2 * 30px )/2);
         margin: 15px;
-        }
-    @media  (min-width:1200px){
+    }
+    @include desktop{
         height: 251px; 
         width: calc((100% - 4 * 30px )/4);
         margin: 15px;
-        }
+    }
     
-        &:not(:last-child){
-        @media (max-width: 767px){
+    &:not(:last-child){
+        @include mobile-max {
         margin-bottom: 30px;
         }
-        }
+    }
 }
-
-.advanteges-box{
+.advanteges__box{
     background: #F5F4FA;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-        @media   (min-width:480px){
-            height: 123px;
-            width: 450px;
-            }
-        @media  (min-width:768px){
-            height:120px ;
-            width: 354px;
-            }
-        @media  (min-width:1200px){
-            height: 120px; ;
-            width: 270px;
 
-            }
+    @include mobile{
+        height: 123px;
+        width: 450px;
+    }
+    @include tablet{
+        height:120px ;
+        width: 354px;
+    }
+    @include desktop{
+        height: 120px; ;
+        width: 270px;
+    }
 }
-.advanteges-title{
+.advanteges__title{
     color: #212121;
     font-weight: 700;
     font-size: 14px;
@@ -64,19 +57,18 @@
     margin-bottom: 10px;
     margin-top: 30px;
 }
-.advanteges-text{
-font-size: 14px;
+.advanteges__text{
+    font-size: 14px;
     line-height: 1.7;
-    @media(min-width:480px){
+    
+    @include mobile{
         width: 450px;
-        
-        }
-    @media(min-width:768px){
+    }
+    @include tablet{
         width: 354px;
         height: 75px;
-        }
-    @media   (min-width:1200px){
+    }
+    @include desktop{
         width: 270px;
-        }
-
+    }
 }

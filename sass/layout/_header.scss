@@ -1,41 +1,25 @@
 .page-header{
     background-color: #ffffff; 
     border-bottom: 1px solid #ECECEC;
-    @media(max-width:768px){
-        position: relative;
-        }
 
+    @include tablet{
+        position: relative;
     }
-    .header .nav{
-    @media(max-width:767px){
+}
+.header .nav{
+    @include mobile-max{
         justify-content: space-between;
         min-height: 80px;
         display: flex;
         align-items: center;
-        }
-        @media(min-width:768px){
-            display: flex;
-            align-items: center;
-            }
     }
-    
-.logo {
-    color: #000000;
-    text-decoration: none;
-    font-family: Raleway, suns-serif;
-    font-size: 26px;
-    line-height: 1.14;
-
-    padding-top: 24px;
-    padding-bottom: 25px;
-    display: inline-block;
-    margin-right: 88px;
-}
-.logo__web{
-    color: #2196F3;
+    @include tablet{
+        display: flex;
+        align-items: center;
+    }
 }
 .menu-button{
-    @media(max-width:767px){
+    @include mobile-max{
         z-index: 20;
         display: inline-flex;
         margin: 0px;
@@ -57,20 +41,20 @@
         display: none;
         }
     }
-    @media(min-width:768px){
+    @include tablet{
         &{
             display: none;
         }
         }
-    @media   (min-width:1200px){
+    @include desktop{
         &{
             display: none;
         }
         }
 }
 
-.menu-container{
-    @media(max-width:767px){
+.nav__container{
+    @include mobile-max{
     max-width: 767px;
     display: none;
     position: absolute;
@@ -86,24 +70,24 @@
             display: block;
         }
     }
-    @media(min-width:768px){
+    @include tablet{
         &{
             display: none;
         }
-        }
-    @media   (min-width:1200px){
+    }
+    @include desktop{
         &{
             display: none;
         }
-        }
+    }
 }
-.nav-grid{
-    @media(max-width:767px){
+.nav__list-link{
+    @include mobile-max{
         &{
             display: none;
         }
-        }
-    @media(min-width:768px){
+    }
+    @include tablet{
         display: flex; 
         &.link:hover,
         &.link:focus{
@@ -113,14 +97,14 @@
         font-size: 14px;
         line-height: 1.14;
         }
-        }
+    }
 }
-.nav-grid__container{
+.nav__element{
     &:not(:last-child){
-        @media (min-width: 768px){
-        margin-right: 50px;
+        @include mobile{
+            margin-right: 50px;
         }
-        }
+    }
 }  
 .link.current::after{
     content: "";
@@ -133,61 +117,58 @@
     bottom: -30px;
 }
     
-.contact-grid{
-    @media(max-width:767px){
+.nav__list-contact{
+    @include mobile-max{
             &{
                 display: none;
             }
             }
-    @media(min-width:768px){
-    margin-left: auto;
-    list-style: none;
-    & .link:hover,
-    & .link:focus{
-    color: #2196F3;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    }
-    }
-    @media  (min-width:1200px){
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    @include tablet{
+        margin-left: auto;
+        list-style: none;
+        & .link:hover,
+        & .link:focus{
+            color: #2196F3;
+            padding-top: 21px;
+            padding-bottom: 21px;
         }
+    }
+    @include desktop{
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
-
-    .contact-grid__container{
-    @media (min-width: 768px){
-    margin-bottom: 10px;
-    &:not(:last-child){
-    margin-right: 30px;
+.nav__contact{
+    @include tablet{
+        margin-bottom: 10px;
+        &:not(:last-child){
+            margin-right: 30px;
+        }
     }
-    }
-    @media (min-width: 1200px){
+    @include desktop{
         margin-bottom: 0px;
     }
 }
-    
-    .contact-grid .link{
-        @media (min-width: 768px){
-    color:  #757575;
-    text-decoration: none;
-    display:inline-block ;
-    display: flex;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
+.nav__list-contact .link{
+    @include tablet{
+        color:  #757575;
+        text-decoration: none;
+        display:inline-block ;
+        display: flex;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); 
     }
-        }
-    
-    .contact-grid__icon{
-     @media (min-width: 768px){
-    margin-right: 10px;
-    fill: #757575;
+} 
+.nav__icon{
+    @include tablet{
+        margin-right: 10px;
+            fill: #757575;
         .link:hover &{
-        fill: #2196F3;
+            fill: #2196F3;
         }
         .link:focus &{
-        fill: #2196F3;
+            fill: #2196F3;
         }
     }
 }
