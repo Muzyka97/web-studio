@@ -139,15 +139,7 @@
         padding-bottom: 32px;
     }
 }
-.nav__contact{
-    @include tablet{
-        margin-bottom: 10px;
-    }
-    @include desktop{
-        margin-bottom: 0px;
-        margin-right: 30px;
-    }
-}
+
 .nav__list-contact .link{
     @include tablet{
         color:  #757575;
@@ -162,6 +154,15 @@
         letter-spacing: 0.24px;; 
     }
 } 
+.nav__contact{
+    @include tablet{
+        margin-bottom: 10px;
+    }
+    @include desktop{
+        margin-bottom: 0px;
+        margin-right: 30px;
+    }
+}
 .nav__icon{
     @include tablet{
         margin-right: 10px;
