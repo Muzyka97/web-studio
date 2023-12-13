@@ -7,9 +7,9 @@
     }
 }
 .nav{
+    height: 80px;
     @include mobile-max{
         justify-content: space-between;
-        min-height: 80px;
         display: flex;
         align-items: center;
     }
@@ -124,19 +124,19 @@
             }
             }
     @include tablet{
+        padding-top: 20px;
+        padding-bottom: 20px;
         margin-left: auto;
         list-style: none;
-        & .link:hover,
-        & .link:focus{
-            color: #2196F3;
-            padding-top: 21px;
-            padding-bottom: 21px;
-        }
     }
     @include desktop{
         display: flex;
         padding-top: 32px;
         padding-bottom: 32px;
+        & .link:hover,
+        & .link:focus{
+            color: #2196F3;
+        }
     }
 }
 
@@ -155,18 +155,24 @@
     }
 } 
 .nav__contact{
-    @include tablet{
-        margin-bottom: 10px;
+    &:first-child{
+        @include tablet {
+            margin-bottom: 10px;
+        }
+ 
+        @include desktop {
+            margin: 0px;
+            margin-right: 30px;
+        }
     }
-    @include desktop{
-        margin-bottom: 0px;
-        margin-right: 30px;
-    }
+
 }
 .nav__icon{
     @include tablet{
         margin-right: 10px;
-            fill: #757575;
+        fill: #757575;
+    }
+    @include desktop{
         .link:hover &{
             fill: #2196F3;
         }

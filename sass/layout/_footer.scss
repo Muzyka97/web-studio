@@ -4,53 +4,44 @@ background: #2F303A;
 padding-top: 60px;
 padding-bottom: 60px;
 text-align: center;
-}
-// .page-footer__box{
-// display: flex;
-// }
-// .footer__nav{
-//     margin-right: 70px;
-// }
-// .header__wraper{
-//     @include desktop{
-//         display: flex;
 
-//     }
-// }
+}
+
 .footer__box {
     @include tablet {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
-
     @include desktop{
-        display: flex;
+        text-align: start;
     }
 }
 
 .footer__blok{
     &:not(:last-child){
-          @include mobile-max{
         margin-bottom: 60px;
-        }
     }
-  
 
     &:first-child{
         @include tablet{
             margin-right: 165px;
-
         }
-   
-    @include desktop{
-        margin-right: 70px;
+        @include desktop{
+            margin-right: 70px;
+            margin-bottom: 0px;
+        }
     }
-}
+
+    &:last-child{
+        @include desktop{
+            margin-left: 93px;
+        }
+    }
 }
 
 .footer__nav-element{
     color: #FFF;
-    text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 14px;
     font-style: normal;
@@ -59,6 +50,9 @@ text-align: center;
     letter-spacing: 0.42px;
     &:not(:last-child){
         margin-bottom: 8px;
+    }
+    @include desktop{
+        text-align: start;
     }
 }
 
@@ -75,100 +69,89 @@ text-align: center;
 .footer__nav.link{
     color: #FFFFFF;
 }
-// .footer__nav.link:hover,
-// .footer__nav.link:focus{
-//     color: #2196F3;
-// }
-// .follow + .follow{
-// margin-left: 93px;
-// }
 
-.follow__title{
-color: #FFFFFF;
-font-size: 14px;
-line-height: 16px;
-margin-bottom: 20px;
+.footer__title{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .follow__list{
     display: flex;
     justify-content: center;
 }
-.follow-container__box{
+.follow__item{
     &:not(:first-child){
         margin-left: 10px;
     }
 }
-.follow-container__link{  
-width: 44px;
-height: 44px;
-background: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+.follow__item-link{  
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop{
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,  &:focus{  
+            background-color:#2196F3;
+        }
+    }
 }
 
-.follow-container__icon{
-fill: #FFFFFF;
-height: 20px;
-width: 20px;
+.follow__item-icon{
+    fill: #FFFFFF;
+    height: 20px;
+    width: 20px;
 
-transition-duration: 250ms;
-transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    @include desktop{
 
-}
-.follow-container__link:hover .follow-container__icon {
-background-color:#2196F3;
-fill:#FFFFFF
-}
-.follow-container__link:focus .follow-container__icon{  
-background-color:#2196F3;
-fill:#FFFFFF
-}
-.follow-container__link:hover ,
-.follow-container__link:focus {  
-background-color:#2196F3;
+        transition-duration: 250ms;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+        .social__link:hover &, .social__link:focus &{
+            fill:#FFFFFF
+        }
+    }
+
 }
 .join{
-justify-content: center;
-align-items: center;
-@include desktop{
-    display: flex;
-    align-items: stretch
-   
-}
-
+    @include desktop{
+        display: flex;
+        align-items: stretch
+    }
 }
 .join__lable{
-font-size: 12px;
-line-height: 14px;
-color: #757575;
-display: block;
-margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #757575;
+    display: block;
+    margin-bottom: 4px;
 }
 .join__input{
-outline: none;
-width: 450px;
-height: 50px;
-padding-left:16px;
-padding-right: 16px;
-margin-bottom: 20px;
-color: #FFFFFF;
-border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: transparent;
+    display: block;
+    outline: none;
+    width: 450px;
+    height: 50px;
+    padding-left:16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
 
-    @include tablet{
-        margin-left: 93px;
-    }
+
     @include desktop{
- 
         margin-right: 12px;
+        width: 358px;
      
        
     }
