@@ -51,6 +51,7 @@
         <button type="button" class="button" data-modal-open>замовити послугу</button>
       </div>
     </section>
+   <!-- advanteres -->
     <section class="advanteges">
       <div class="container">
         <ul class="advanteges__list">
@@ -93,6 +94,26 @@
         </ul>
       </div>
     </section>
+    <!--work-->
+    <section class="work" >
+      <div class="container">
+        <!-- <h2>Чим ми займаємося</h2> -->
+        <ul class="work__list">  
+          <li class="work__element">
+            <img src="./images/notebook.jpg" alt="notebook" width="370"/>
+            <p class="work__text">Десктопні додатки</p>
+          </li>
+          <li  class="work__element">
+            <img src="./images/phone.jpg" alt="phone" width="370"/>
+            <p class="work__text">Мобільні додатки</p>
+          </li>
+          <li class="work__element">
+            <img src="./images/tablet.jpg" alt="tablet" width="370"/>
+            <p class="work__text">Дизайнерські рішення</p>
+          </li>
+        </ul>
+      </div>
+    </section>   
   <!-- -----team---- -->
     <section class="team">
       <!-- <h2 class="section__heading">Наша команда</h2> -->
@@ -437,6 +458,68 @@
           </div>
         </div>
     </footer>
-<script src="./js/menu.js"></script>
+<!------------MODAL----------->
+  <div class="backdrop is-hidden"data-modal>
+    <div class="modal">
+      <button type="button" class="modal__button-close" data-modal-close>X</button>
+      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+      <form>
+        <div class="modal__container">
+          <label class="modal__container-lable" for="user-name">Iм'я</label>
+          <div>
+            <input
+            type="text" 
+            class="modal__input"
+            name="user-name"
+            required
+            id="user-name"
+            />
+          </div>
+        </div>
+        <div class="modal__container">
+          <label class="modal__container-lable" for="tel">Телефон</label>
+          <input type="tel"
+          name="tel"
+          class="modal__input"
+          required
+          id="tel"
+          />
+        </div>
+      
+        <div class="modal__container">
+          <label class="modal__container-lable" for="email">Пошта</label>
+          <input type="email"
+          name="email"
+          class="modal__input"
+          required
+          id="email"
+          />
+        </div>
+
+        <div class="modal__container">
+          <label class="modal__container-lable" for="comment">Коментар</label>
+          <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal__text"></textarea>
+        </div>
+
+        <div class="modal__container">
+            <input type="checkbox"
+            name="policy"
+            class="modal__container-check visually-hidden "
+            id="policy"
+            />
+            <label class="modal__container-text" for="policy">
+              <span>
+                <svg class="check__icon" height="16" width="15"> 
+                  <use href="./images/symbol.svg#icon-check-point"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю   <a href=""class="modal__container-policy">Умови договору</a> </label>
+        </div>
+        <button type="submit" class="modal__button">Відправити</button>
+      </form>  
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 </html>
