@@ -18,53 +18,18 @@
         align-items: center;   
     }
 }
-.menu-button{
-    @include mobile-max{
-        z-index: 20;
-        display: inline-flex;
-        margin: 0px;
-        padding: 0px;
-        align-items: center;
-        border: none;
-        background-color: transparent;
-        
-    & .icon-close{
-        display: none;
-        }
-    &.is-open .icon-close{
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        }
-    &.is-open .icon-menu{
-        display: none;
-        }
-    }
-    @include tablet{
-        &{
-            display: none;
-        }
-    }
-    @include desktop{
-        &{
-            display: none;
-        }
-    }
-}
 
 .nav__container{
     @include mobile-max{
-    max-width: 767px;
     display: none;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    height: 100%;
     z-index: 5;
-    height: 796px;
     left: 0;
-    background-color: palegoldenrod;
-    padding: 20px;
-    text-align: center;
+    top:0;
+    background-color:#ffffff;
+    padding: 48px 40px;
     font-size: 20px;
         &.is-open{
             display: block;
@@ -75,11 +40,31 @@
             display: none;
         }
     }
-    @include desktop{
-        &{
-            display: none;
-        }
+}
+.mobile__nav {
+
+}
+.mobile__nav-element:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile__nav-link {
+    font-size: 40px;
+    &:hover,  &:focus{  
+        color:#2196F3;
     }
+}
+.mobile__contact {
+    margin-top: 302px;
+}
+.mobile__link {
+    font-size: 34px;
+    color:#2196F3;
+// чо не робее?????????????????????
+}
+.mobile__link-mail {
+    font-size: 24px;
+    color:#757575;
 }
 .nav__list-link{
     @include mobile-max{

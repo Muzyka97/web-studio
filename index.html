@@ -16,13 +16,24 @@
         <!-- nav -->
       <nav class="nav">      
         <a href="/index.html"class="logo"> <span class="logo__web">Web</span>Studio </a>
-        <button  type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
+        <button  type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
-            <use class="icon-close" href="./images/symbol.svg#icon-menu"></use>
-            <use class="icon-menu" href="./images/symbol.svg#icon-close"></use>
+            <use class="icon-close" href="./images/symbol.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/symbol.svg#icon-menu"></use>
           </svg>
         </button>
-        <div class="nav__container" id="nav__container" data-menu>hdsljflksdg</div>
+        <div class="nav__container" id="nav__container" data-menu>
+          <ul class="mobile__nav">
+            <li class="mobile__nav-element"><a href="index.html" class="mobile__nav-link link">Студія</a></li>
+            <li class="mobile__nav-element"><a href="portfolio.html" class="mobile__nav-link link">Портфоліо</a></li>
+            <li class="mobile__nav-element"><a href="" class="mobile__nav-link link">Котакти</a></li>
+          </ul>
+          <ul class="mobile__contact">
+            <li class="mobile__nav-element"><a href="tel:+380961111111" class="mobile__link link"></a>+380961111111</li>
+            <li class="mobile__nav-element"><a href="mailto:info@devstudio.com" class="mobile__link-mail link">info@devstudio.com</a></li>
+          </ul>
+     
+        </div>
         <ul class="nav__list-link">
           <li class="nav__element"><a href="index.html"class="link current ">Студія</a></li>
           <li class="nav__element"><a href="portfolio.html" class="link ">Портфоліо</a></li>
@@ -474,6 +485,11 @@
             required
             id="user-name"
             />
+            <span>
+              <svg class="icon__input" height="18" width="18"> 
+                <use href="./images/symbol.svg#icon-person-black"></use>
+              </svg>
+            </span>
           </div>
         </div>
         <div class="modal__container">
@@ -484,6 +500,11 @@
           required
           id="tel"
           />
+          <span>
+            <svg class="icon__input" height="18" width="18"> 
+              <use href="./images/symbol.svg#icon-phone-black"></use>
+            </svg>
+          </span>
         </div>
       
         <div class="modal__container">
@@ -494,6 +515,11 @@
           required
           id="email"
           />
+          <span>
+            <svg class="icon__input" height="18" width="18"> 
+              <use href="./images/symbol.svg#icon-email-black"></use>
+            </svg>
+          </span>
         </div>
 
         <div class="modal__container">

@@ -10,3 +10,24 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.link {   
+    color:#212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+    
+  
+    display:inline-block ; 
+    position: relative;
+    
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    
+.current{
+    color: #2196F3;
+    text-decoration: none;
+    display:inline-block ;
+}
