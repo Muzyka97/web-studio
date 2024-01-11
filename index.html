@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./css/main.css"/>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page__header">
     <div class="container">
         <!-- nav -->
       <nav class="nav">      
         <a href="/index.html"class="logo"> <span class="logo__web">Web</span>Studio </a>
-        <button  type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
+        <button  type="button" class="menu__button" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
-            <use class="icon-close" href="./images/symbol.svg#icon-close"></use>
-            <use class="icon-menu" href="./images/symbol.svg#icon-menu"></use>
+            <use class="icon__close" href="./images/symbol.svg#icon-close"></use>
+            <use class="icon__menu" href="./images/symbol.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="nav__container" id="nav__container" data-menu>
@@ -29,10 +29,15 @@
             <li class="mobile__nav-element"><a href="" class="mobile__nav-link link">Котакти</a></li>
           </ul>
           <ul class="mobile__contact">
-            <li class="mobile__nav-element"><a href="tel:+380961111111" class="mobile__link link"></a>+380961111111</li>
+            <li class="mobile__nav-element mobile__link-phone "><a href="tel:+380961111111" class="link"></a>+38 096 111 11 11</li>
             <li class="mobile__nav-element"><a href="mailto:info@devstudio.com" class="mobile__link-mail link">info@devstudio.com</a></li>
           </ul>
-     
+          <ul class="mobile__social">
+            <li class="mobile__social_element"><a href="" class="mobile__social-link"></a>Instagram</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link link"></a>Twitter</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link link"></a>Facebook</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link link"></a>LinkedIn</li>
+          </ul>
         </div>
         <ul class="nav__list-link">
           <li class="nav__element"><a href="index.html"class="link current ">Студія</a></li>
@@ -485,11 +490,9 @@
             required
             id="user-name"
             />
-            <span>
-              <svg class="icon__input" height="18" width="18"> 
+              <svg class="modal__icon" height="18" width="18"> 
                 <use href="./images/symbol.svg#icon-person-black"></use>
               </svg>
-            </span>
           </div>
         </div>
         <div class="modal__container">
@@ -500,11 +503,9 @@
           required
           id="tel"
           />
-          <span>
-            <svg class="icon__input" height="18" width="18"> 
+            <svg class="modal__icon" height="18" width="18"> 
               <use href="./images/symbol.svg#icon-phone-black"></use>
             </svg>
-          </span>
         </div>
       
         <div class="modal__container">
@@ -515,11 +516,9 @@
           required
           id="email"
           />
-          <span>
-            <svg class="icon__input" height="18" width="18"> 
+            <svg class="modal__icon" height="18" width="18"> 
               <use href="./images/symbol.svg#icon-email-black"></use>
             </svg>
-          </span>
         </div>
 
         <div class="modal__container">

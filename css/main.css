@@ -95,6 +95,13 @@ section {
   display: inline-block;
 }
 
+.icon__close {
+  cursor: pointer;
+}
+.icon__close:hover, .icon__close:focus {
+  fill: #2196F3;
+}
+
 .container {
   padding: 0 15px;
   margin: 0 auto;
@@ -160,7 +167,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .menu-button {
+  .menu__button {
     z-index: 20;
     display: inline-flex;
     margin: 0px;
@@ -169,26 +176,26 @@ section {
     border: none;
     background-color: transparent;
   }
-  .menu-button .icon-close {
+  .menu__button .icon__close {
     display: none;
   }
-  .menu-button.is-open .icon-close {
+  .menu__button.is__open .icon__close {
     display: block;
     position: fixed;
     top: 10px;
     right: 10px;
   }
-  .menu-button.is-open .icon-menu {
+  .menu__button.is__open .icon__menu {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .menu__button {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .menu-button {
+  .menu__button {
     display: none;
   }
 }
@@ -225,10 +232,9 @@ section {
   background: #FFFFFF;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
-
-.modal__button-close:hover:focus,
-.modal__button-close:focus {
+.modal__button-close:hover, .modal__button-close:focus {
   color: #2196F3;
 }
 
@@ -321,14 +327,7 @@ section {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
-}
-
-.modal__text:focus {
-  border-color: #2196F3;
-}
-
-.modal__input:focus {
-  border-color: #2196F3;
+  cursor: pointer;
 }
 
 .modal__text {
@@ -336,14 +335,27 @@ section {
   padding-left: 16px;
   padding-top: 12px;
   padding-bottom: 12px;
+  color: #757575;
+  opacity: 50%;
   resize: none;
+}
+.modal__text:focus, .modal__text:hover {
+  border-color: #2196F3;
+}
+
+.modal__input:focus, .modal__input:hover {
+  border-color: #2196F3;
+}
+
+.modal__input:hover ~ .modal__icon {
+  fill: #2196F3;
 }
 
 .modal__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.icon__input {
+.modal__icon {
   margin-left: 12px;
   transform: translateY(-30px);
 }
@@ -384,12 +396,12 @@ section {
   margin-left: 5px;
 }
 
-.page-header {
+.page__header {
   background-color: #ffffff;
   border-bottom: 1px solid #ECECEC;
 }
 @media screen and (min-width: 768px) {
-  .page-header {
+  .page__header {
     position: relative;
   }
 }
@@ -416,7 +428,6 @@ section {
     display: none;
     position: fixed;
     width: 100%;
-    height: 100%;
     z-index: 5;
     left: 0;
     top: 0;
@@ -439,6 +450,7 @@ section {
 }
 
 .mobile__nav-link {
+  cursor: pointer;
   font-size: 40px;
 }
 .mobile__nav-link:hover, .mobile__nav-link:focus {
@@ -449,7 +461,8 @@ section {
   margin-top: 302px;
 }
 
-.mobile__link {
+.mobile__link-phone {
+  cursor: pointer;
   font-size: 34px;
   color: #2196F3;
 }
@@ -457,6 +470,19 @@ section {
 .mobile__link-mail {
   font-size: 24px;
   color: #757575;
+  margin-bottom: 64px;
+}
+
+.mobile__social {
+  display: flex;
+}
+
+.mobile__social_element {
+  position: relative;
+  color: #2196F3;
+}
+.mobile__social_element:not(:last-child) {
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 767px) {

@@ -16,7 +16,8 @@
     text-align: center;
     border: none;
 }
-.menu-button{
+// MENU-------------------------------------------
+.menu__button{
     @include mobile-max{
         z-index: 20;
         display: inline-flex;
@@ -25,19 +26,19 @@
         align-items: center;
         border: none;
         background-color: transparent;
-        
-    & .icon-close{
-        display: none;
-        }
-    &.is-open .icon-close{
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        }
-    &.is-open .icon-menu{
-        display: none;
-        }
+
+        & .icon__close{
+            display: none;
+            }
+        &.is__open .icon__close{
+            display: block;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            }
+        &.is__open .icon__menu{
+            display: none;
+            }
     }
     @include tablet{
         &{
@@ -49,6 +50,7 @@
             display: none;
         }
     }
+
 }
 // FOOTER------------------------------
 .footer__button  {
@@ -122,11 +124,13 @@
     background: #FFFFFF;
     width: 30px;
     height: 30px;
+    cursor: pointer;
+    
+    &:hover , &:focus{
+        color:#2196F3
+    }
 }
-.modal__button-close:hover:focus,
-.modal__button-close:focus{
-    color:#2196F3
-}
+
 .modal__button{
     cursor: pointer;
     color: #FFFFFF;

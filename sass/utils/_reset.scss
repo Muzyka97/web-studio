@@ -31,3 +31,12 @@
     text-decoration: none;
     display:inline-block ;
 }
+
+.icon__close{
+    cursor: pointer;
+
+    &:hover, &:focus{
+        fill: #2196F3; 
+    }
+}
+    
