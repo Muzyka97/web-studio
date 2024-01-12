@@ -1,11 +1,12 @@
-.work__list{
-    @include mobile {
+.work{
+    @media screen and (max-width: 1199px){
         display: none;
     }
-    @include desktop {
-        display: flex;
-    }
-        
+      
+}
+.work__list{
+    display: flex;
+  
 }
 .work__element + .work__element{
     margin-left: 30px;

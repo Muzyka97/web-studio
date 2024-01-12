@@ -39,4 +39,21 @@
         fill: #2196F3; 
     }
 }
+
+.title{
+    color: #212121;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
+
+    @include desktop{
+        font-size: 36px;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
+}
+
     
