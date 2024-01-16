@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+    <header class="page__header">
+        <div class="container">
+        <!-- nav -->
+       <nav class="nav">      
+        <a href="/index.html"class="logo"> <span class="logo__web">Web</span>Studio </a>
+        <button  type="button" class="menu__button" aria-expanded="false" aria-controls="menu-container" data-menu-button> 
+          <svg width="40" height="40" aria-label="перемикач мобільного меню">
+            <use class="icon__close" href="./images/symbol.svg#icon-close"></use>
+            <use class="icon__menu" href="./images/symbol.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="nav__container" id="nav__container" data-menu>
+          <ul class="mobile__nav">
+            <li class="mobile__nav-element"><a href="index.html" class="mobile__nav-link link">Студія</a></li>
+            <li class="mobile__nav-element"><a href="portfolio.html" class="mobile__nav-link link">Портфоліо</a></li>
+            <li class="mobile__nav-element"><a href="" class="mobile__nav-link link">Котакти</a></li>
+          </ul>
+          <ul class="mobile__contact">
+            <li class="mobile__nav-element mobile__link-phone "><a href="tel:+380961111111" class="link"></a>+38 096 111 11 11</li>
+            <li class="mobile__nav-element"><a href="mailto:info@devstudio.com" class="mobile__link-mail link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile__social">
+            <li class="mobile__social_element"><a href="" class="mobile__social-link" ></a>Instagram</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link"></a>Twitter</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link"></a>Facebook</li>
+            <li class="mobile__social_element"><a href="" class="mobile__social-link"></a>LinkedIn</li>
+          </ul>
+        </div>
+        <ul class="nav__list-link">
+          <li class="nav__element"><a href="index.html"class="link current ">Студія</a></li>
+          <li class="nav__element"><a href="portfolio.html" class="link ">Портфоліо</a></li>
+          <li class="nav__element" ><a href=""class="link">Контакти</a></li>
+        </ul> 
+        <ul class="nav__list-contact" >
+          <li class="nav__contact">
+            <a href="mailto:info@devstudio.com"class="link"> <svg class="nav__icon" height="12" width="16" >
+              <use href="./images/symbol.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
+          </li>
+          <li class="nav__contact">
+            <a href="tel:+380961111111"class="link"><svg class="nav__icon" height="16" width="10" >
+            <use href="./images/symbol.svg#icon-smartphone"></use> 
+            </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </nav >
+        </div>
+    </header>
+    <main>
+        <section class="product">
+            <div class="container">
+                <h1 class="invisible__title">Зображення</h1>
+                <ul class="filter__list">
+                    <li class="filter__list-element"><button type="button" class="button__white">Усі</button></li>
+                    <li class="filter__list-element"><button type="button"class="button__white">Веб-сайти</button></li>
+                    <li class="filter__list-element"><button type="button"class="button__white">Додатки</button></li>
+                    <li class="filter__list-element"><button type="button"class="button__white">Дизайн</button></li>
+                    <li class="filter__list-element" ><button type="button"class="button__white">Маркетинг</button></li>
+                </ul>
+            
+                <ul class="example"> 
+                    <li  class="example-container">
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image1.webp 1x,
+                                    ./images/portfolio/features-mobile/image1@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image1.webp 1x,
+                                    ./images/portfolio/features-tablet/image1@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image1.webp 1x,
+                                    ./images/portfolio/features-desktop/image1@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image1.jpg"
+                                  alt="Website model"
+                                />
+                              </picture>
+                                <p class="example-container__text"> 
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title" >Технокряк</h2>
+                            <p class="example-container__p">Веб-сайт</p>
+                        </div>
+                    </li>                                
+                    <li  class="example-container" > 
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image2.webp 1x,
+                                    ./images/portfolio/features-mobile/image2@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image2.webp 1x,
+                                    ./images/portfolio/features-tablet/image2@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image2.webp 1x,
+                                    ./images/portfolio/features-desktop/image2@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image2.jpg"
+                                  alt="Poster model"
+                                />
+                              </picture>
+                            <p class="example-container__text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                            <div class="example-container__box">
+                                <h3 class="example-container__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="example-container__p">Дизайн</p>
+                            </div>
+                    </li> 
+                    <li  class="example-container">
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image3.webp 1x,
+                                    ./images/portfolio/features-mobile/image3@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image3.webp 1x,
+                                    ./images/portfolio/features-tablet/image3@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                  ./images/portfolio/features-desktop/image3.webp 1x,
+                                  ./images/portfolio/features-desktop/image3@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image3.jpg"
+                                  alt="App model"
+                                />
+                            </picture>
+                            <p class="example-container__text"> 
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Ресторан Seafood</h2>
+                            <p class="example-container__p">Додаток</p>
+                        </div>                        
+                    </li>
+                    <li class="example-container"> 
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image4.webp 1x,
+                                    ./images/portfolio/features-mobile/image4@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image4.webp 1x,
+                                    ./images/portfolio/features-tablet/image4@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./img/portfolio/features-desktop/image4.webp 1x,
+                                    ./img/portfolio/features-desktop/image4@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image4.jpg"
+                                  alt="Prime model"
+                                />
+                            </picture>
+                            <p class="example-container__text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Проект Prime</h2>
+                            <p class="example-container__p">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li  class="example-container"> 
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image5.webp 1x,
+                                    ./images/portfolio/features-mobile/image5@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image5.webp 1x,
+                                    ./images/portfolio/features-tablet/image5@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image5.webp 1x,
+                                    ./images/portfolio/features-desktop/image5@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image5.webp 1x,"
+                                  alt="App model"
+                                />
+                            </picture>
+                            <p class="example-container__text"> 
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Проект Boxes</h2>
+                            <p class="example-container__p">Додаток</p>
+                        </div>
+                    </li>
+                    <li  class="example-container"> 
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image6.webp 1x,
+                                    ./images/portfolio/features-mobile/image6@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image6.webp 1x,
+                                    ./images/portfolio/features-tablet/image6@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image6.webp 1x,
+                                    ./images/portfolio/features-desktop/image6@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image6.jpg"
+                                  alt="Website model"
+                                />
+                            </picture>
+                            <p class="example-container__text"> 
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Inspiration has no Borders</h2>
+                            <p class="example-container__p">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li  class="example-container">
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image7.webp 1x,
+                                    ./images/portfolio/features-mobile/image7@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image7.webp 1x,
+                                    ./images/portfolio/features-tablet/image7@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image7.webp 1x,
+                                    ./images/portfolio/features-desktop/image7@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image7.jpg"
+                                  alt="Limited Edition model"
+                                />
+                            </picture>
+                            <p class="example-container__text"> 
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div> 
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Видавництво Limited Edition</h2>
+                            <p class="example-container__p">Дизайн</p>
+                        </div>
+                    </li>
+                    <li  class="example-container"> 
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image8.webp 1x,
+                                    ./images/portfolio/features-mobile/image8@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image8.webp 1x,
+                                    ./images/portfolio/features-tablet/image8@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image8.webp 1x,
+                                    ./images/portfolio/features-desktop/image8@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image8.jpg"
+                                  alt="App model"
+                                />
+                            </picture>
+                            <p class="example-container__text"> 
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Проект LAB</h2>
+                            <p class="example-container__p">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li  class="example-container">
+                        <div class="example-container__pictures">
+                            <picture>
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-mobile/image9.webp 1x,
+                                    ./images/portfolio/features-mobile/image9@2x.webp 2x"
+                                  media="(max-width: 767px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-tablet/image9.webp 1x,
+                                    ./images/portfolio/features-tablet/image9@2x.webp 2x"
+                                  media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                  srcset="
+                                    ./images/portfolio/features-desktop/image9.webp 1x,
+                                    ./images/portfolio/features-desktop/image9@2x.webp 2x"
+                                  media="(min-width: 1200px)"
+                                />
+                                <img
+                                  src="./images/portfolio/features-mobile/image9.jpg"
+                                  alt="App model"
+                                />
+                            </picture>
+                            <p class="example-container__text">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="example-container__box">
+                            <h3 class="example-container__title">Growing Business</h2>
+                            <p class="example-container__p">Додаток</p>
+                        </div>
+                    </li>
+                </ul>              
+            </div>
+        </section>  
+<!-----------footer---------->
+        <footer class="footer " >
+            <div class="container footer__box" >
+                <div class="footer__blok">
+                    <a href="/index.html"class="footer__logo"> <span class="logo__web">Web</span><span>Studio</span> </a>
+                    <address>
+                        <ul class="footer__nav" >
+                        <li class="footer__nav-element">м. Київ, пр-т Лесі Українки, 26</li>
+                        <li class="footer__nav-element"><a href="mailto:info@devstudio.com"class="footer__link">info@devstudio.com</a></li>
+                        <li class="footer__nav-element"><a href="tel:+380961111111"class="footer__link"> +38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <!-- follow -->
+                <div class="footer__blok">
+                <h4 class="footer__title">Приєднуйтесь</h4>
+                <ul class="follow__list ">
+                    <li class="follow__item">
+                    <a href="" class="follow__item-link">
+                        <svg class="follow__item-icon">
+                        <use href="./images/symbol.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <li class="follow__item">
+                    <a href="" class="follow__item-link">
+                        <svg class="follow__item-icon" >
+                        <use href="./images/symbol.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="follow__item">
+                    <a href="" class="follow__item-link">
+                        <svg class="follow__item-icon" >
+                        <use href="./images/symbol.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="follow__item">
+                    <a href="" class="follow__item-link">
+                        <svg class="follow__item-icon" >
+                        <use href="./images/symbol.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+                </div> 
+
+            <!-- join -->
+            <div class="footer__blok">
+                <h4 class="footer__title">Підпишіться на розсилку</h4>
+                <div class="join">
+                <label class="join__lable" for="email"></label>
+                <input
+                class="join__input"
+                placeholder="E-mail"
+                type="email"
+                name="user-name"
+                required
+                id="email"
+                />
+                <!-- footer batton -->
+                <button type="button" class="footer__button">Підписатися 
+                <svg class="footer__button-icon" width="24px" height="24px">
+                    <use href="./images/symbol.svg#icon-send"></use>
+                </svg>
+                </button>
+            </div>
+            </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>

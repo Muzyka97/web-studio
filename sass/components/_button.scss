@@ -76,42 +76,38 @@
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-    
-// .button-white{
-//     display: flex;
-//     justify-content: center;
-// }
-// .button-white__container + .button-white__container{
-//     margin-left: 8px;
-// }
-// .button-white .button-white__button {
-//     cursor: pointer;
-//     background-color: #F5F4FA;
-//     color: #212121;
-//     font-family: inherit;
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.6;
+// PORTFOLIO----------------------------   
+.button__white {
+    cursor: pointer;.filter{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+    background-color: #F5F4FA;
+    color: #212121;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
 
-//     height: 38px;
-//     padding: 6px 22px;
-//     border-radius: 4px;
-//     border: none;
-//     display: inline-block;
-//     min-width: 73px;
-//     text-align: center;
+    height: 38px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    display: inline-block;
+    min-width: 73px;
+    text-align: center;
 
-//     transition-duration: 250ms;
-//     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .button-white .button-white__button:hover,
-// .button-white .button-white__button:focus{
-//     background-color:#2196F3;
-//     color: #FFFFFF;
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-//     0px 1px 2px rgba(0, 0, 0, 0.08),
-//     0px 2px 2px rgba(0, 0, 0, 0.12);
-// }
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__white:hover,
+.button__white:focus{
+    background-color:#2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 // MODAL---------------------------------
 .modal__button-close{

@@ -1,0 +1,24 @@
+.filter__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+
+    @include tablet{
+        justify-content: center;
+        margin-bottom: 0;
+    }
+}
+.filter__list-element {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+    @include tablet {
+        margin-bottom: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+    }
+}
