@@ -1,5 +1,7 @@
 .team{
     background-color: #F5F4FA;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 .team__list{
     @include tablet {
@@ -9,17 +11,14 @@
     }
 }
 .team__element{
-    @include mobile{
-        max-height:622px ;
-    }
+    max-height:622px ;
+
     @include tablet{
         max-height:536px ;
-        width: calc((100% - 2 * 30px )/2);
         margin: 15px;
     }
     @include desktop{
         max-height:428px ; 
-        width: calc((100% - 4 * 30px )/4);
         margin: 15px;
     }
     
@@ -30,15 +29,15 @@
     }
 }
 .team__box{
+    width: 450px;
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     background: #fff;
     border-radius: 4px;
     padding-bottom: 24px;
     align-items: center;
     justify-content: center;
-    @include mobile{
-        width: 450px;
-    }
+
     @include tablet{
         width: 354px;
     }
