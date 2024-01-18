@@ -1,22 +1,43 @@
 .hero{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
-
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
     
     background-color: #2F303A ;
     background-image: linear-gradient( to right, 
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url("../images/bgi.jpg");
+    url('../../images/bg/bg-mobile.jpg'),
+    image-set(
+        url("../../images/bg/bg-mobile.webp") 1x type("image/webp"),
+        url("../../images/bg/bg-mobile@2x.webp") 2x type("image/webp"),
+    );
     
     background-size: cover;
     background-position: center ;
     background-repeat: no-repeat;
+
+    @include tablet {
+        background-image: linear-gradient( to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../../images/bg/bg-tablet.jpg"),
+        image-set(
+          url("../../images/bg/bg-tablet.webp") 1x type("image/webp"),
+          url("../../images/bg/bg-tablet@2x.webp") 2x type("image/webp"),
+        )
+    }
+
+    @include desktop {
+        background-image: inear-gradient( to right, 
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../img/bg/bg-desktop.jpg"),
+        image-set(
+          url("../img/bg/bg-desktop.webp") 1x type("image/webp"),
+          url("../img/bg/bg-desktop@2x.webp") 2x type("image/webp"),
+        )
+    }
 }
 .hero__title{
     color: #ffffff;
@@ -30,6 +51,8 @@
 
 
     @include desktop{
-        font-size: 44px;  
+        font-size: 2.75rem;
+        line-height: 1.36;
+        letter-spacing: 2.64px;
     } 
 }
