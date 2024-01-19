@@ -79,7 +79,7 @@
 .modal__input:focus , .modal__input:hover{
     border-color: #2196F3;
 }
-.modal__input:hover ~ .modal__icon {
+.modal__input:hover, .modal__input:focus ~ .modal__icon {
     fill: #2196F3; 
 }
 .modal__input::placeholder{
@@ -118,4 +118,5 @@
 }
 .modal__container-policy{
     margin-left: 5px;
+    color: #2196F3;
 }

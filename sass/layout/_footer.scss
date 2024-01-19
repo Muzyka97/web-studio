@@ -15,6 +15,7 @@ text-align: center;
     }
     @include desktop{
         text-align: start;
+        justify-content: space-between
     }
 }
 
@@ -29,13 +30,14 @@ text-align: center;
         }
         @include desktop{
             margin-right: 70px;
-            margin-bottom: 0px;
+            margin-bottom: 0px; 
         }
     }
-
-    &:last-child{
+    &:nth-child(2) {
         @include desktop{
-            margin-left: 93px;
+            margin-right: 93px;
+            margin-bottom: 0;
+
         }
     }
 }
@@ -150,9 +152,8 @@ text-align: center;
 
 
     @include desktop{
+        margin-bottom: 0px;
         margin-right: 12px;
         width: 358px;
-     
-       
     }
 }

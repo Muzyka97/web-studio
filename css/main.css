@@ -220,7 +220,7 @@ img {
 .footer__button {
   cursor: pointer;
   height: 50px;
-  width: 200px;
+  width: auto;
   padding: 10px 28px;
   align-items: center;
   justify-content: space-around;
@@ -237,6 +237,9 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__button-icon {
+  margin-left: 10px;
 }
 
 .button__white {
@@ -394,7 +397,7 @@ img {
   border-color: #2196F3;
 }
 
-.modal__input:hover ~ .modal__icon {
+.modal__input:hover, .modal__input:focus ~ .modal__icon {
   fill: #2196F3;
 }
 
@@ -441,6 +444,7 @@ img {
 
 .modal__container-policy {
   margin-left: 5px;
+  color: #2196F3;
 }
 
 .page__header {
@@ -615,6 +619,11 @@ img {
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list-contact .link {
+    font-size: 14px;
   }
 }
 
@@ -930,20 +939,17 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__container:hover .clients__icon, .clients__container:focus .clients__icon {
+  fill: #2196F3;
+}
+.clients__container:focus, .clients__container:hover {
+  border: 1px solid #2196F3;
+}
 
 .clients__icon {
   fill: #AFB1B8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__container:hover .clients__icon,
-.clients__container:focus .clients__icon {
-  fill: #2196F3;
-}
-
-.clients__container:focus, .clients__container:hover {
-  border: 1px solid #2196F3;
 }
 
 .footer {
@@ -963,6 +969,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__box {
     text-align: start;
+    justify-content: space-between;
   }
 }
 
@@ -981,8 +988,9 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__blok:last-child {
-    margin-left: 93px;
+  .footer__blok:nth-child(2) {
+    margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1102,6 +1110,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .join__input {
+    margin-bottom: 0px;
     margin-right: 12px;
     width: 358px;
   }

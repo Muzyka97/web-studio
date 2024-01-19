@@ -56,7 +56,7 @@
 .footer__button  {
     cursor: pointer;
     height: 50px;
-    width: 200px;
+    width: auto;
     padding: 10px 28px;
     align-items: center;
     justify-content: space-around;
@@ -75,7 +75,12 @@
 
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+    &-icon{
+        margin-left: 10px;
+    }
 }
+
 // PORTFOLIO----------------------------   
 .button__white {
     cursor: pointer;.filter{

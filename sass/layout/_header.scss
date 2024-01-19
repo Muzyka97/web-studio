@@ -41,9 +41,6 @@
     }
 }
 
-// .mobile__nav {
-
-// }
 .mobile__nav-element:not(:last-child) {
     margin-bottom: 32px;
 }
@@ -166,6 +163,9 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.24px;; 
+    }
+    @include desktop{
+        font-size: 14px;
     }
 } 
 .nav__contact{

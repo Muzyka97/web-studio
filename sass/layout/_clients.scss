@@ -33,19 +33,24 @@
     
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-} 
+
+  
+    &:hover 
+    .clients__icon, &:focus 
+    .clients__icon{
+        fill: #2196F3;
+        
+    }
+    &:focus,&:hover {
+    border: 1px solid #2196F3;
+    }
+
+}
+
 .clients__icon{
     fill: #AFB1B8;
     
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__container:hover 
-.clients__icon, .clients__container:focus 
-.clients__icon{
-    fill: #2196F3;
-    
-}
-.clients__container:focus,.clients__container:hover {
-    border: 1px solid #2196F3;
-}
+
