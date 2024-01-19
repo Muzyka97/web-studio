@@ -7,10 +7,10 @@
     background-image: linear-gradient( to right, 
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url('../../images/bg/bg-mobile.jpg'),
+    url('../images/bg/bg-mobile.jpg'),
     image-set(
-        url("../../images/bg/bg-mobile.webp") 1x type("image/webp"),
-        url("../../images/bg/bg-mobile@2x.webp") 2x type("image/webp"),
+        url("../images/bg/bg-mobile.webp") 1x type("image/webp"),
+        url("../images/bg/bg-mobile@2x.webp") 2x type("image/webp"),
     );
     
     background-size: cover;
@@ -21,10 +21,10 @@
         background-image: linear-gradient( to right, 
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url("../../images/bg/bg-tablet.jpg"),
+        url("../images/bg/bg-tablet.jpg"),
         image-set(
-          url("../../images/bg/bg-tablet.webp") 1x type("image/webp"),
-          url("../../images/bg/bg-tablet@2x.webp") 2x type("image/webp"),
+          url("../images/bg/bg-tablet.webp") 1x type("image/webp"),
+          url("../images/bg/bg-tablet@2x.webp") 2x type("image/webp"),
         )
     }
 
